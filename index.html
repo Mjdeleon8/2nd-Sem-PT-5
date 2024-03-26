@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+    <!-- Performance Task 5  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content" id="first-container">
+        <h1 style="transform: translateX(-140px)">Hello, Survey</h1>
+        <form>
+          <div class="names">
+            <input
+              type="text"
+              name=""
+              id="first"
+              placeholder="First Name"
+            /><br />
+            <input
+              type="text"
+              name=""
+              id="middle"
+              placeholder="Middle Name"
+            /><br />
+            <input type="text" name="" id="last" placeholder="Last Name" />
+          </div>
+          <br />
+          <div class="wrapper-sex-age-birthdate">
+            <div class="sex" id="sex-value">
+              <label for="sex"><h4>Sex:</h4></label>
+              <label for="male">Male</label>
+              <input
+                type="radio"
+                value="male"
+                name="gender"
+                id="male"
+                class="overall-sex"
+              />
+              <label for="female">Female</label>
+              <input
+                type="radio"
+                value="female"
+                name="gender"
+                id="female"
+                class="overall-sex"
+              />
+              <label for="other">Other</label>
+              <input
+                type="radio"
+                value="other"
+                name="gender"
+                id="other"
+                class="overall-sex"
+              />
+            </div>
+            <div class="age">
+              <div class="age-container">
+                <label for="age"><h4>Age:</h4></label>
+                <div class="six-seventeen">
+                  <h6 id="age6">6 - 17</h6>
+                </div>
+                <div class="adult">
+                  <h6 id="age18">18+</h6>
+                </div>
+              </div>
+            </div>
+            <div class="birth-date">
+              <div class="center-container">
+                <h3 style="text-align: center">Birth date:</h3>
+                <input type="date" name="" id="date" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="second-container" id="second-container">
+        <div class="h-s">
+          <h1 style="transform: translateX(-150px)">Hello, Survey</h1>
+        </div>
+        <form action="">
+          <h3 class="hwd">How do you go to school?</h3>
+          <div class="wrps">
+            <label for="walk">Walk</label>
+            <input
+              type="checkbox"
+              name="walk"
+              id="walk"
+              class="all-input"
+              onclick="handleCheckboxClick('walk')"
+            />
+            <label for="car">Car</label>
+            <input
+              type="checkbox"
+              name="car"
+              id="car"
+              onclick="handleCheckboxClick('car')"
+              class="all-input"
+            />
+            <label for="commute">Commute</label>
+            <input
+              type="checkbox"
+              name="commute"
+              id="commute"
+              onclick="handleCheckboxClick('commute')"
+              class="all-input"
+            />
+          </div>
+          <h3 for="" class="sy">Say something:</h3>
+          <div class="user">
+            <textarea
+              style="resize: none"
+              name=""
+              id="first-cl"
+              class="txA"
+              cols="30"
+              rows="10"
+              placeholder="About yourself"
+              required
+            ></textarea>
+            <textarea
+              style="resize: none"
+              name=""
+              id="second-cl"
+              class="txA"
+              cols="30"
+              rows="10"
+              placeholder="Your hobbies"
+              required
+            ></textarea>
+          </div>
+        </form>
+      </div>
+      <!-- 2nd page -->
+    </div>
+    <div class="buttons" id="btn-container">
+      <div class="wrapper-btn"></div>
+      <div class="wrp">
+        <a href="#" class="previous round" id="previous">&#8249;</a>
+        <button onclick="reset_btn()" class="btn btn-style">
+          Reset this form
+        </button>
+        <button class="btn btn-style" id="enter-btn">Enter</button>
+        <a href="#" class="next round" id="next">&#8250;</a>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

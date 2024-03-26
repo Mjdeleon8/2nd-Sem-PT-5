@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 15px;
+}
+
+.container {
+  width: 35%;
+  background-color: #ffffff;
+  margin: 5% auto;
+  border-radius: 30px;
+  padding: 40px;
+  height: 450px;
+  box-shadow: 0px 0px 8px rgb(0, 0, 0, 0.9);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: -1;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+input {
+  color: black;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.sex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.age-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.six-seventeen {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.adult {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+h3 {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.wrapper-sex-age-birthdate {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.buttons {
+  margin: auto;
+}
+
+a {
+  font-size: 40px;
+  text-decoration: none;
+  color: purple;
+}
+
+.wrp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.btn {
+  all: unset;
+  transform: translateY(-130px);
+}
+
+.btn-style {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-7px);
+}
+
+.previous {
+  transform: translateY(-135px) translateX(-95px);
+}
+
+.next {
+  transform: translateY(-135px) translateX(95px);
+}
+
+.h-s {
+  position: absolute;
+  top: -55px;
+  left: 93.2px;
+}
+
+h6 {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* 2nd page */
+
+.second-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  transform: translateY(-290px) translateX(28px);
+}
+
+.hwd {
+  margin-bottom: 23px;
+}
+
+.sy {
+  margin-bottom: 23px;
+}
+
+.wrps {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 23px;
+}
+
+.input-style {
+  padding: 60px 10px;
+}
+
+.user {
+  display: flex;
+  gap: 1rem;
+}
+
+b {
+  font-size: 20px;
+}
+
+.all-input {
+  padding: 10px;
+}
+
+.txA {
+  width: 180px;
+}
